@@ -1,0 +1,26 @@
+.border_style {
+	border: solid;
+	border-radius: 30px;
+}
+
+.position_style {
+	position: relative; /* absolute, fixed */
+}
+
+.display_style {
+	display: inline-block; /* none */
+}
+
+.margin_style {
+	margin: 100px;
+}
+
+.color_style {
+	color: blue;
+}
+
+body {
+	background-color: rgb(0, 0, 0, 0.5);
+	/*background-image: url("fig1.png");
+	background-repeat: no-repeat; */
+}

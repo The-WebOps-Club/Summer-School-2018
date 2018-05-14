@@ -1,0 +1,48 @@
+html, head, body, title
+h1-h6
+p
+a
+b, i, u
+ul, ol, li
+
+table -> tr, th, td
+
+br, hr
+
+img
+
+discuss about attributes
+
+src
+div
+class
+id
+
+iframe
+
+commenting
+
+height
+width
+max-width, max-height, vw, vh
+position
+display
+margin
+padding
+border
+border-radius
+background-color
+background
+background-repeat
+color
+nth - child
+font-size
+font-family
+font-weight
+box-shadow
+text-align
+text-decoration
+letter-spacing
+overflow
+opacity
+transform
