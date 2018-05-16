@@ -1,1 +1,1 @@
-angular.module('day3',['appRoutes','mainController']);
+angular.module('day3',['appRoutes','mainController','pageController']);

@@ -8,6 +8,11 @@ angular.module('appRoutes',['ngRoute'])
     controller: 'mainCtrl',
     controllerAs: 'main'
   })
+  .when('/page/:name/:email', {
+    templateUrl: 'views/page.html',
+    controller: 'pageCtrl',
+    controllerAs: 'page'
+  })
   .otherwise({
     redirectTo: '/'
   })

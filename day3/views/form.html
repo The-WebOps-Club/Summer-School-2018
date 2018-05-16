@@ -1,0 +1,27 @@
+<!-- Form example -->
+<br><br><br>
+<div class="card" style="width:50vw;margin-left:25vw;padding:2em;">
+  <h1 style="text-align:center;">Login Page</h1>
+<form name="loginForm">
+  <div class="form-group">
+    <label for="name1">Name</label>
+    <input type="text" ng-model="login.name" id="name1" class="form-control" name="name1" value=""  ng-minlength="3" ng-pattern="/^[a-zA-Z\s]*$/" required>
+  </div>
+  <!-- <h1>{{login.name}}</h1> -->
+  <span ng-show="loginForm.name1.$dirty && loginForm.name1.$invalid">Enter valid name.</span>
+
+  <div class="form-group">
+    <label for="emailid">Email</label>
+    <input type="email" ng-model="login.email" id="emailid" class="form-control" name="emailid" value="" required>
+  </div>
+  <span ng-show="loginForm.emailid.$touched && loginForm.emailid.$invalid">Enter valid email id.</span>
+  <div class="form-group">
+    <label for="pwd">Password</label>
+    <input type="password" ng-model="login.pwd" id="pwd" class="form-control" name="pwd" value="" ng-minlength="5" ng-maxlength="15" required>
+  </div>
+  <span ng-show="loginForm.pwd.$dirty && loginForm.pwd.$invalid">Enter valid password.</span>
+  <center>
+    <button type="button" name="button" ng-disabled="loginForm.$invalid" ng-click="submit()" class="btn btn-primary" style="text-align:center;">Login</button>
+  </center>
+</form>
+</div>
