@@ -1,0 +1,27 @@
+<!--sudo npm install -g npm
+sudo npm install http-server -g
+sudo http-server -o -p 3000
+
+python3 -m http.server 8080
+python -m SimpleHTTPServer 8080 -->
+<!DOCTYPE html>
+<html ng-app="day3">
+  <head>
+    <base href='/' />
+    <meta charset="utf-8">
+    <title>Sample Web Page</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-route.min.js">
+    </script>
+    <script src="app.js" type="text/javascript"></script>
+    <script src="routes.js" type="text/javascript"></script>
+    <script src="controllers/mainController.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <h1>
+       Welcome to the app.
+    </h1>
+    <div ng-view>
+    </div>
+  </body>
+</html>
