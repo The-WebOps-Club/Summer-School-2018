@@ -1,5 +1,6 @@
 package com.example.gokulan.weabopscalc;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -12,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView tv_answer;
     private EditText et_num1, et_num2;
     private Button b_add, b_sub, b_mul, b_div;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,16 +33,25 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 try {
+
                     double num1 = Double.parseDouble(et_num1.getText().toString());
                     double num2 = Double.parseDouble(et_num2.getText().toString());
 
                     double ans = num1 + num2;
 
                     tv_answer.setText(String.valueOf(ans));
+
+                    Intent i = new Intent(MainActivity.this, SecondActivity.class);
+                    i.putExtra("Output", String.valueOf(ans));
+                    startActivity(i);
+                    finish();
+
                 }
                  catch (Exception e) {
                     tv_answer.setText("Invalid Input");
                  }
+
+
             }
         });
     }
