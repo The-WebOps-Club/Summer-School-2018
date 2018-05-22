@@ -1,0 +1,3 @@
+[submodule "Ionic"]
+	path = Ionic
+	url = https://github.com/shafeef901/Ionic-shopping-cart.git
